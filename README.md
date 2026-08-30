@@ -37,7 +37,6 @@ Extract local geometric features from a 3D point cloud using **PyVista**, **NumP
 - Load and clean 3D point clouds
 - K-nearest neighbour search using KD-Tree
 - Local PCA computation
-- Surface normal estimation
 - Planarity calculation
 - Linearity calculation
 - Omnivariance calculation
@@ -149,7 +148,7 @@ segmentation_feature: "verticality"
 
 point_size: 3
 
-output_path: "../outputs/segmented_point_cloud.ply"
+output_path: ".../outputs/segmented_point_cloud.ply"
 ```
 
 | Parameter | Description |
@@ -221,9 +220,6 @@ Verticality = 1 - |nz|
 | `linearity` | Linear characteristics |
 | `omnivariance` | 3D geometric variation |
 | `verticality` | Surface orientation |
-| `nx` | Normal X component |
-| `ny` | Normal Y component |
-| `nz` | Normal Z component |
 
 ---
 
@@ -248,7 +244,7 @@ The segmented point cloud is saved to the location specified by `output_path`.
 Example:
 
 ```text
-outputs/segmented_point_cloud.ply
+.../outputs/segmented_point_cloud.ply
 ```
 
 ---
