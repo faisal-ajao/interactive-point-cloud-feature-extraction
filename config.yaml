@@ -1,0 +1,17 @@
+# Input Data
+input_path: ".../data/point_cloud.ply"
+
+# Preprocessing
+merge_tolerance: 0.001
+
+# Neighborhood
+knn: 20
+
+# Segmentation (planarity, linearity, omnivariance, verticality)
+segmentation_feature: "verticality"
+
+# Visualization
+point_size: 3
+
+# Output
+output_path: ".../outputs/segmented_point_cloud.ply"
